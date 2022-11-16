@@ -7,6 +7,10 @@ package com.kodluyoruz.cinemaAutomation.dto.order;
 	public class OrderTicketDto {
 
 	    private Long id;
+	    
+	    private String name;
+	    
+	    private String lastName;
 
 	    private int row;
 

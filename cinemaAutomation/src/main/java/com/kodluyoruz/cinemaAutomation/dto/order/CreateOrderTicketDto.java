@@ -10,6 +10,10 @@ package com.kodluyoruz.cinemaAutomation.dto.order;
 	@Data
 	public class CreateOrderTicketDto {
 
+		private String name;
+		
+		private String lastName;
+		
 	    private int row;
 
 	    private int seat;

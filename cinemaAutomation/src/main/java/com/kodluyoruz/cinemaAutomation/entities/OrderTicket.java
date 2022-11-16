@@ -26,6 +26,12 @@ package com.kodluyoruz.cinemaAutomation.entities;
 	    @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Long id;
+	    
+	    @Column(name = "name")
+	    private String name;
+	    
+	    @Column(name = "last_name")
+	    private String lastName;
 
 	    @Column(name = "row_place")
 	    private int rowPlace;
@@ -39,12 +45,17 @@ package com.kodluyoruz.cinemaAutomation.entities;
 	    @ManyToOne
 	    private Movie movie;
 
-	    public OrderTicket(Long id, int rowPlace, int seat, double price) {
-	        this.id = id;
-	        this.rowPlace = rowPlace;
-	        this.seat = seat;
-	        this.price = price;
-	    }
+		public OrderTicket(Long id, String name, String lastName, int rowPlace, int seat, double price) {
+			this.id = id;
+			this.name = name;
+			this.lastName = lastName;
+			this.rowPlace = rowPlace;
+			this.seat = seat;
+			this.price = price;
+		}
+	    
+	    
+
 	}
 
 

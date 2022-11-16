@@ -20,6 +20,8 @@ public class OrderTicketMapper {
 	public OrderTicket toCreateEntity(CreateOrderTicketDto createOrderTicketDto) {
 		OrderTicket orderTicket = new OrderTicket();
 
+		orderTicket.setName(createOrderTicketDto.getName());
+		orderTicket.setLastName(createOrderTicketDto.getLastName());
 		orderTicket.setRowPlace(createOrderTicketDto.getRow());
 		orderTicket.setSeat(createOrderTicketDto.getSeat());
 		orderTicket.setPrice(createOrderTicketDto.getPrice());
@@ -39,6 +41,8 @@ public class OrderTicketMapper {
 		OrderTicketDto orderTicketDto = new OrderTicketDto();
 
 		orderTicketDto.setId(orderTicket.getId());
+		orderTicketDto.setName(orderTicket.getName());
+		orderTicketDto.setLastName(orderTicket.getLastName());
 		orderTicketDto.setRow(orderTicket.getRowPlace());
 		orderTicketDto.setSeat(orderTicket.getSeat());
 		orderTicketDto.setPrice(orderTicket.getPrice());
@@ -54,6 +58,8 @@ public class OrderTicketMapper {
 			OrderTicketDto orderTicketDto = new OrderTicketDto();
 
 			orderTicketDto.setId(orderTicket.getId());
+			orderTicketDto.setName(orderTicket.getName());
+			orderTicketDto.setLastName(orderTicket.getLastName());
 			orderTicketDto.setRow(orderTicket.getRowPlace());
 			orderTicketDto.setSeat(orderTicket.getSeat());
 			orderTicketDto.setPrice(orderTicket.getPrice());

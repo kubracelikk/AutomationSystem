@@ -17,10 +17,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 
-
-//import javax.persistence.EntityManager;
-
-
 @Service
 @Transactional
 public class OrderTicketServiceImpl implements OrderTicketService {
@@ -31,8 +27,6 @@ public class OrderTicketServiceImpl implements OrderTicketService {
     @Autowired
     private MovieRepository movieRepository;
 
-   // @Autowired
-   // private EntityManager entityManager;
 
     @Autowired
     private OrderTicketMapper orderTicketMapper;
