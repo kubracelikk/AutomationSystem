@@ -5,8 +5,13 @@ In this project, movie and ticket orders can be created, deleted, updated and li
 
 # Technologies
 -Java
+
 -Spring Data JPA
+
 -Postman
+
 -H2 Database
+
 -Spring Web
+
 -Lombok
